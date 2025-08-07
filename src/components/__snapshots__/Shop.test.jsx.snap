@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Shop component > renders shopping items 1`] = `
+<div>
+  <div
+    class="shop"
+  >
+    <p
+      class="loading"
+    />
+    <p
+      class="error"
+    />
+    <div
+      class="cardGrid"
+    >
+      <p>
+        Item1
+      </p>
+      <p>
+        Item2
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Shop component > renders shopping page 1`] = `
+<div>
+  <div
+    class="shop"
+  >
+    <p
+      class="loading"
+    />
+    <p
+      class="error"
+    />
+    <div
+      class="cardGrid"
+    >
+      <p>
+        Item1
+      </p>
+      <p>
+        Item2
+      </p>
+    </div>
+  </div>
+</div>
+`;
