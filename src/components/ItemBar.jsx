@@ -15,29 +15,20 @@ function ItemBar({ data, cartTools }) {
         }
     }
 
-
-    function QuantitySection() {
-        return (
-            <div className="quantityButton">
-                <button className="decrease" name="decrease" onClick={decQuantity}>-</button>
-                <div className="amount" name="quantity">{quantity}</div>
-                <button className="increase" name="increase" onClick={incQuantity}>+</button>
-            </div>
-        )
-    }
-
-    function AddItemSection() {
-        return (
-            <div className="cardAddItem">
-                <button className="addItemButton" onClick={cartTools.addItem({ ...data, quantity: quantity })}>Add To Cart</button>
-            </div>
-        )
+    function handleAddItem() {
+        cartTools.addItem({ ...data, quantity: quantity })
     }
 
     return (
         <div className="itemBar">
-            <QuantitySection />
-            <AddItemSection />
+            <div className="quantitySection">
+                <button className="decrease" name="decrease" onClick={decQuantity}>-</button>
+                <div className="amount" name="quantity">{quantity}</div>
+                <button className="increase" name="increase" onClick={incQuantity}>+</button>
+            </div>
+            <div className="addItemSection">
+                <button className="addItemButton" onClick={handleAddItem}>Add To Cart</button>
+            </div>
         </div>
     )
 }

@@ -1,10 +1,59 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Shop component > renders shopping items 1`] = `
+exports[`Shop component > renders shop page 1`] = `
 <div>
   <div
     class="shop"
   >
+    <nav
+      class="navBar"
+    >
+      <ul
+        class="navLinks"
+      >
+        <li
+          class="homeLink"
+        />
+        <li
+          class="shopLink"
+        />
+        <li
+          class="cartLink"
+        >
+          <button
+            class="cartDisplay"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-shopping-cart"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="8"
+                cy="21"
+                r="1"
+              />
+              <circle
+                cx="19"
+                cy="21"
+                r="1"
+              />
+              <path
+                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
     <p
       class="loading"
     />
@@ -14,37 +63,112 @@ exports[`Shop component > renders shopping items 1`] = `
     <div
       class="cardGrid"
     >
-      <p>
-        Item1
-      </p>
-      <p>
-        Item2
-      </p>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Shop component > renders shopping page 1`] = `
-<div>
-  <div
-    class="shop"
-  >
-    <p
-      class="loading"
-    />
-    <p
-      class="error"
-    />
-    <div
-      class="cardGrid"
-    >
-      <p>
-        Item1
-      </p>
-      <p>
-        Item2
-      </p>
+      <div
+        class="card"
+      >
+        <h2
+          class="itemTitle"
+        >
+          Item1
+        </h2>
+        <img
+          alt="Item1"
+          class="itemIMG"
+        />
+        <p
+          class="itemDescription"
+        >
+          Item10
+        </p>
+        <div
+          class="itemBar"
+        >
+          <div
+            class="quantitySection"
+          >
+            <button
+              class="decrease"
+              name="decrease"
+            >
+              -
+            </button>
+            <div
+              class="amount"
+              name="quantity"
+            >
+              1
+            </div>
+            <button
+              class="increase"
+              name="increase"
+            >
+              +
+            </button>
+          </div>
+          <div
+            class="addItemSection"
+          >
+            <button
+              class="addItemButton"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <h2
+          class="itemTitle"
+        >
+          Item2
+        </h2>
+        <img
+          alt="Item2"
+          class="itemIMG"
+        />
+        <p
+          class="itemDescription"
+        >
+          Item20
+        </p>
+        <div
+          class="itemBar"
+        >
+          <div
+            class="quantitySection"
+          >
+            <button
+              class="decrease"
+              name="decrease"
+            >
+              -
+            </button>
+            <div
+              class="amount"
+              name="quantity"
+            >
+              1
+            </div>
+            <button
+              class="increase"
+              name="increase"
+            >
+              +
+            </button>
+          </div>
+          <div
+            class="addItemSection"
+          >
+            <button
+              class="addItemButton"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

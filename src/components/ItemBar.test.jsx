@@ -46,12 +46,12 @@ describe('ItemBar component', () => {
 
         await act(async () => {
             await user.click(buttonPlus)
-        })
-        await act(async () => {
             await user.click(buttonAddItem)
         })
 
         expect(result.current.returnItems()[0].id).toBe(0)
         expect(result.current.returnItems()[0].quantity).toBe(2)
     })
+
+
 })
