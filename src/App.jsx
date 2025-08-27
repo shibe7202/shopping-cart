@@ -1,5 +1,4 @@
 import useCart from './components/useCart.jsx'
-import './App.css'
 import Shop from './components/Shop.jsx'
 import Home from './components/Home.jsx'
 import { Outlet } from "react-router-dom";

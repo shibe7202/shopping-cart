@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from './ItemBar.module.css'
 
 function ItemBar({ data, cartTools }) {
     const [quantity, setQuantity] = useState(1)
@@ -20,14 +21,14 @@ function ItemBar({ data, cartTools }) {
     }
 
     return (
-        <div className="itemBar">
-            <div className="quantitySection">
-                <button className="decrease" name="decrease" onClick={decQuantity}>-</button>
-                <div className="amount" name="quantity">{quantity}</div>
-                <button className="increase" name="increase" onClick={incQuantity}>+</button>
+        <div className={styles.itemBar}>
+            <div className={styles.quantitySection}>
+                <button className={styles.decrease} name='decrease' onClick={decQuantity}>-</button>
+                <div className={styles.amount} name="quantity">{quantity}</div>
+                <button className={styles.increase} name="increase" onClick={incQuantity}>+</button>
             </div>
-            <div className="addItemSection">
-                <button className="addItemButton" onClick={handleAddItem}>Add To Cart</button>
+            <div className={styles.addItemSection}>
+                <button className={styles.addItemButton} onClick={handleAddItem}>Add to cart</button>
             </div>
         </div>
     )

@@ -1,0 +1,69 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Card component > renders card 1`] = `
+<div>
+  <div
+    class="_card_a63395"
+  >
+    <div
+      class="_imgContainer_a63395"
+    >
+      <img
+        alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+        class="_img_a63395"
+      />
+    </div>
+    <h2
+      class="_itemTitle_a63395"
+    >
+      Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+    </h2>
+    <p
+      class="_itemDescription_a63395"
+      placeholder="description"
+    >
+      Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to...
+    </p>
+    <p
+      class="_itemPrice_a63395"
+    >
+      $0
+    </p>
+    <div
+      class="_itemBar_2ee8ab"
+    >
+      <div
+        class="_quantitySection_2ee8ab"
+      >
+        <button
+          class="_decrease_2ee8ab"
+          name="decrease"
+        >
+          -
+        </button>
+        <div
+          class="_amount_2ee8ab"
+          name="quantity"
+        >
+          1
+        </div>
+        <button
+          class="_increase_2ee8ab"
+          name="increase"
+        >
+          +
+        </button>
+      </div>
+      <div
+        class="_addItemSection_2ee8ab"
+      >
+        <button
+          class="_addItemButton_2ee8ab"
+        >
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

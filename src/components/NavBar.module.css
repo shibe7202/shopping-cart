@@ -1,0 +1,33 @@
+@import '../variables.module.css';
+
+
+.navBar {
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+a {
+    color: #ffffff;
+
+}
+
+.navLinks {
+    height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.4em;
+    padding-left: 30px;
+}
+
+.homeLink {}
+
+.shopLink {}
+
+.cartLink {}
+
+.cartDisplay {
+
+    padding: 10px 20px;
+}
