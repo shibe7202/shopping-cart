@@ -4,6 +4,10 @@
 .navBar {
     color: #ffffff;
     background-color: var(--primary-color);
+    box-shadow: 0 3px 5px rgb(151, 151, 151);
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
 }
 
 a {
@@ -16,9 +20,15 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 15px;
+    gap: 24px;
     font-size: 1.4em;
-    padding-left: 30px;
+    padding-left: 330px;
+
+}
+
+.logo {
+    width: 86px;
+    height: 86px
 }
 
 .homeLink {}

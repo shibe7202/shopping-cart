@@ -1,9 +1,14 @@
 .card {
     width: 240px;
-    height: 540px;
+    height: 525px;
     text-align: start;
-    border: 1px solid #f5f5f5;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
     font-family: 'OpenSans';
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .imgContainer {
@@ -31,15 +36,23 @@
     bottom: 0;
     background-color: black;
     opacity: 0.03;
-    z-index: -1;
+    z-index: 0;
+}
+
+.infoContainer {
+    background-color: #fff;
+    flex: 1;
 }
 
 .itemTitle {
-    padding: 0 8px;
-    margin-top: 12px;
+    height: 64px;
+    max-height: 64px;
+    padding: 12px 8px;
     font-size: 17px;
     font-weight: 600;
     line-height: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .itemDescription {

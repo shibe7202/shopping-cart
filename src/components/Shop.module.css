@@ -1,0 +1,18 @@
+.shop {
+    background-color: oklch(98.4% 0.003 247.858);
+}
+
+.loading {
+    font-family: OpenSans;
+    font-size: 1.4em;
+}
+
+.error {}
+
+.cardGrid {
+    margin: 3% 18%;
+    background-color: transparent;
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
