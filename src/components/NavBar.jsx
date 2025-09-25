@@ -3,11 +3,7 @@ import { ShoppingCart } from 'lucide-react';
 import styles from './NavBar.module.css'
 import logo from '../assets/logo.png'
 
-function NavBar() {
-
-    function showCart() {
-        //put cart into view
-    }
+function NavBar({ cartTools }) {
 
     return (
         <nav className={styles.navBar}>
@@ -20,8 +16,8 @@ function NavBar() {
                     <Link to='/shop'>Shop</Link>
                 </li>
                 <li className={styles.cartLink}>
-                    <button className={styles.cartDisplay} onClick={showCart}>
-                        <ShoppingCart />
+                    <button className={styles.cartDisplay} onClick={cartTools.showCart} id="cartButton">
+                        <ShoppingCart className={styles.icon} />
                     </button>
                 </li>
             </ul>

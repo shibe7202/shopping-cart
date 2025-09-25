@@ -1,4 +1,5 @@
 import NavBar from "./NavBar"
+import Cart from './Cart'
 import { useOutletContext } from "react-router-dom"
 import styles from './Home.module.css'
 import hero from '../assets/pexelsShop3.jpg'
@@ -9,11 +10,12 @@ function Home() {
 
     return (
         <div className={styles.home}>
+            <Cart cartTools={cartTools} />
             <div className={styles.gradient1}></div>
             <div className={styles.gradient2}></div>
             <div className={styles.gradient3}></div>
             <div className={styles.gradient4}></div>
-            <NavBar />
+            <NavBar cartTools={cartTools} />
             <div className={styles.heroContainer}>
                 <div className={styles.heroHeader}>
                     <h1>Shop with us</h1>

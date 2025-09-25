@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 function useCart() {
     const [items, setItems] = useState([])
+    const [visible, setVisible] = useState(false)
 
     function addItem(item) {
         if (items.some(value => value.id === item.id)) {
@@ -38,11 +39,11 @@ function useCart() {
         return total
     }
 
-    function returnItems() {
-        return items
+    function showCart() {
+        setVisible(!visible)
     }
 
-    return { addItem, removeItem, totalItems, returnItems }
+    return { addItem, removeItem, totalItems, showCart, items, visible }
 }
 
 export default useCart

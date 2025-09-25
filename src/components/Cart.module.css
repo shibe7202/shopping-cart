@@ -1,0 +1,80 @@
+@import '../variables.module.css';
+
+
+.cart {
+    width: 370px;
+    height: 500px;
+    padding: 15px 10px;
+    position: fixed;
+    right: 0%;
+    top: 20%;
+    background-color: white;
+    border: 1px rgb(208, 206, 206) solid;
+    z-index: 9999;
+    transform: translateX(0%);
+    transition: transform 0.65s ease-in-out;
+    overflow-y: scroll;
+}
+
+.cart.visible {
+    transform: translateX(100%);
+}
+
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.head>p {
+    font-family: Inter;
+    font-size: 1.95em;
+    color: var(--primary-color);
+}
+
+.itemName {
+    width: 255px;
+}
+
+.price {
+    font-weight: 500;
+    color: var(--secondary-color);
+
+}
+
+.itemList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    overflow: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 450;
+    font-family: 'OpenSans';
+}
+
+.shopItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.remove {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 400;
+    font-size: 0.95em;
+}
+
+.checkout {
+    margin-top: 20px;
+    font-weight: 400;
+}

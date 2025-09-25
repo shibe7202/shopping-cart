@@ -103,7 +103,7 @@ ul {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #333;
     background-color: white;
   }
 
