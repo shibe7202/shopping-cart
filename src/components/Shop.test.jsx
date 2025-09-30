@@ -12,7 +12,6 @@ const data = [
     { title: 'Item2', img: '', description: 'Item2', price: 0, id: 'Item2' }
 ]
 
-
 describe("Shop component", () => {
     afterEach(() => {
         vi.resetAllMocks()

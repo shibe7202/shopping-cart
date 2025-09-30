@@ -19,6 +19,9 @@ function NavBar({ cartTools }) {
                     <button className={styles.cartDisplay} onClick={cartTools.showCart} id="cartButton">
                         <ShoppingCart className={styles.icon} />
                     </button>
+                    <div className={styles.itemCount}>
+                        <p className={styles.itemCountValue}>{cartTools.totalItems()}</p>
+                    </div>
                 </li>
             </ul>
         </nav>
